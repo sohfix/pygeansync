@@ -64,4 +64,4 @@ RUN mkdir -p media static
 
 ENTRYPOINT ["/usr/src/app/docker/scripts/entrypoint.sh"]
 
-# todo: push docker image to azure. possibly remove old registry, old container instance and try again. 2.21.24 @nimi
+# todo: still problem with container instance 2.21.24 @nimi
