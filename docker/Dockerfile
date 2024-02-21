@@ -57,8 +57,11 @@ RUN set -eux; \
 	gosu --version; \
 	gosu nobody true
 
-COPY .. .
+COPY scripts/entrypoint.sh /usr/src/app/docker/scripts/entrypoint.sh
 
+RUN chmod +x /usr/src/app/docker/scripts/entrypoint.sh
 RUN mkdir -p media static
 
 ENTRYPOINT ["/usr/src/app/docker/scripts/entrypoint.sh"]
+
+# todo: push docker image to azure. possibly remove old registry, old container instance and try again. 2.21.24 @nimi
