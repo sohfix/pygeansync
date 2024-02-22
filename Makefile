@@ -4,10 +4,15 @@ $(eval $(WHATEVER):;@:)
 # to pass options, you may do so by using "--" e.g.:
 # make up -- --build
 
-file = docker/docker-compose.dev.yml
-ifeq (${CONTEXT}, production)
-	file = docker/docker-compose.yml
-endif
+
+# DEV FILE :
+#file = docker/docker-compose.dev.yml
+file = docker/docker-compose.yml
+## OMIT THIS CONDITIONAL
+#
+#ifeq (${CONTEXT}, production)
+#	file = docker/docker-compose.yml
+#endif
 
 project = sozluk
 cc = docker compose -p $(project) -f $(file)
