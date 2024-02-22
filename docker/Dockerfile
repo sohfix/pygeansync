@@ -64,4 +64,4 @@ RUN mkdir -p media static
 
 ENTRYPOINT ["/usr/src/app/docker/scripts/entrypoint.sh"]
 
-# todo: still problem with container instance 2.21.24 @nimi
+# todo: still problem with container instance 2.22.24 @nimi
