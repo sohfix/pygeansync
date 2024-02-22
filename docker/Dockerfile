@@ -3,6 +3,8 @@ FROM python:3.11-alpine as builder
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+# todo test this
+#ENV CONTEXT=production
 WORKDIR /usr/src/app
 
 RUN apk update \
