@@ -1,0 +1,133 @@
+    1  apt-get install git
+    2  sudo apt-get install git
+    3  sudo apt-get install python3.11
+    4  sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl gnupg
+    5  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/dockerce.gpg
+    6  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/dockerce.gpg] https://download.docker.com/linux/ubuntu jammy stable" | sudo tee /etc/apt/sources.list.d/dockerce.list > /dev/null
+    7  sudo apt update
+    8  sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+    9  sudo docker -V
+   10  sudo docker version
+   11  az acr
+   12  az acr --name tidbitreg
+   13  sudo usermod -aG docker $USER
+   14  newgrp docker
+   15  docker verion
+   16  docker version
+   17  docker run hello-world
+   18  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+   19  az login
+   20  pip freeze
+   21  requirements.txt
+   22  nano requirements.txt
+   23  pip install --upgrade pip
+   24  pip-r requirements.txt
+   25  pip -r requirements.txt
+   26  pip install -r requirements.txt
+   27  pip install psycopg2
+   28  pip install psycopg2-binary
+   29  pip install psycopg2
+   30  sudo apt-get install python-dev
+   31  sudo apt-get install python3-dev
+   32  sudo apt-get install python-dev-is-python3
+   33  pip install psycopg2
+   34  pip install psycopg2-binary
+   35  pip install -U pip
+   36  sudo apt-get install libpq-dev
+   37  sudo apt-get install libpq-dev python-dev
+   38  sudo apt-get install libpq-dev python3-dev
+   39  sudo apt-get autoremove
+   40  sudo apt-get clean
+   41  sudo apt-get update
+   42  sudo apt-get upgrade
+   43  stacer
+   44  sudo apt install stacer
+   45  stacer
+   46  pip install -r requirements.txt
+   47  pip install django
+   48  pip install -r requirements.txt
+   49  sudo apt install python3-dev
+   50  sudo apt install python3.11-dev
+   51  pip install -r requirements.txt
+   52  django
+   53  django-admin --version
+   54  pip install -r requirements.txt
+   55  DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+   56  mkdir -p $DOCKER_CONFIG/cli-plugins
+   57  curl -SL https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+   58  sudo apt update && sudo apt-get install docker-compose-plugin
+   59  docker compose version
+   60  docker --version
+   61  docker-compose
+   62  docker build -t tidbit:tag .
+   63  cd docker && docker build -t tidbit:tag .
+   64  docker build -t tidbit:tag .
+   65  docker images
+   66  az login
+   67  az acr login --name tidbit-application-resource_group
+   68  az acr login --name tidbitreg
+   69  az acr show --name tidbitreg --query loginServer --output table
+   70  docker tag tidbit:tag tidbitreg.azurecr.io/tidbit:tag
+   71  docker push tidbit.azurecr.io/tidbit:tag
+   72  docker push tidbitreg.azurecr.io/tidbit:tag
+   73  az acr repository list --name tidbitreg --output table
+   74  az acr repository show-tags --name tidbitreg --repository tidbit --output table
+   75  az container show --resource-group tidbit-application-resource_group --name tidbitreg --query ipAddress.fqdn -o tsv
+   76  az container show --resource-group tidbit-application-resource_group --name tidbit --query ipAddress.fqdn -o tsv
+   77  az container show --resource-group tidbit-application-resource_group --name tidbitreg --query ipAddress.fqdn -o tsv
+   78  az container show --resource-group tidbit-application-resource_group --name tidbit --query ipAddress.fqdn -o tsv
+   79  az group list
+   80  cd Documents
+   81  ls -a
+   82  cd setup
+   83  touch AKS_settings
+   84  nano AKS_settings
+   85  pg_config --version
+   86  pip install psycopg2
+   87  python3 pip install psycopg2
+   88  python3 pip3 install psycopg2
+   89  python3 -m pip3 install psycopg2
+   90  python3 -m pip install psycopg2
+   91  which requirements.txt
+   92  az group list
+   93  cd scripts
+   94  chmod +x entrypoint.sh
+   95  cd
+   96  cd /Pycharm/
+   97  cd /PycharmProjects/
+   98  cd PycharmProjects/
+   99  cd tidbit/docker
+  100  docker build -t tidbit001:t001 .
+  101  pip install black
+  102  pip install isort
+  103  isort .
+  104  black .
+  105  cd ..
+  106  black .
+  107  docker build -t tidbit001:t001 .
+  108  cd docker
+  109  docker build -t tidbit001:t001 .
+  110  az acr login --name tidbitreg
+  111  docker tag tidbit001:t001 tidbitreg/tidbit001:t001
+  112  docker tag tidbit001:t001 tidbitreg.azurecr.io/tidbit001:t001
+  113  docker push tidbitreg/tidbit001:t001
+  114  docker push tidbitreg.azure.io/tidbit001:t001
+  115  docker image list
+  116  docker rmi e415607166e4
+  117  docker rmi -f e415607166e4
+  118  docker image list
+  119  docker rmi -f 5391247f5d47
+  120  docker image list
+  121  az acr login --name tidbitreg
+  122  docker build -t tidbitimg:resource
+  123  docker build -t tidbitimg:resource .
+  124  docker image list
+  125  docker tag tidbitimg:resource tidbitreg.azurecr.io/tidbitimg:resource
+  126  docker push tidbitreg.azurecr.io/tidbitimg:resource
+  127  docker image list
+  128  pip install typing-extensions
+  129  $CONTEXT
+  130  show $CONTEXT
+  131  pip freeze
+  132  now
+  133  history > history_for_print.txt
